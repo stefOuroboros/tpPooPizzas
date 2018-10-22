@@ -68,25 +68,23 @@ public PizzaMemDao() {
 		return res;
 	}
 	
-	private int getPosition(String codePizza) throws Exception {
+	private int getPosition(String codePizza){
 		int res = -1;
-		if (res >= 0 || res < listPizza.size()) {
 			for (int i = 0; i < listPizza.size(); i++) {
 				if (codePizza == listPizza.get(i).getCode()) {
 					res = i;
 					break;
-				}
 			}
-		} else {throw new Exception("Index erroné.");}
+		}
 		return res;
 	}
 
-	public Pizza findPizzaByCode(String codePizza) throws Exception {
+	public Pizza findPizzaByCode(String codePizza){
 		Pizza res = null;
 		int index = getPosition(codePizza);
 		if (index != -1) {
 			res = listPizza.get(index);
-			} else { throw new Exception ("Index erroné.");}
+			}
 		return res;
 		}
 }

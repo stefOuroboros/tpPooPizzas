@@ -8,6 +8,6 @@ public interface IPizzaDao {
 	void deletePizza(String codePizza) throws Exception;
 	
 	void updatePizza(String codePizza, Pizza pizza) throws Exception;
-	Pizza findPizzaByCode(String codePizza) throws Exception;
+	Pizza findPizzaByCode(String codePizza);
 	boolean pizzaExists(String codePizza) throws Exception;
 }
