@@ -4,10 +4,10 @@ import java.util.List;
 
 public interface IPizzaDao {
 	List<Pizza> findAllPizzas();
-	void saveNewPizza(Pizza pizza);
-	void deletePizza(String codePizza);
+	void saveNewPizza(String codaPizza, Pizza pizza) throws Exception;
+	void deletePizza(String codePizza) throws Exception;
 	
-	void updatePizza(String codePizza, Pizza pizza);
-	Pizza findPizzaByCode(String codePizza);
-	boolean pizzaExists(String codePizza);
+	void updatePizza(String codePizza, Pizza pizza) throws Exception;
+	Pizza findPizzaByCode(String codePizza) throws Exception;
+	boolean pizzaExists(String codePizza) throws Exception;
 }

@@ -11,10 +11,12 @@ public class Pizza {
 		this.price = price;
 	}
 	
+	//getter
 	public String getCode() {return code;}
 	public String getName() {return name;}
 	public float getPrice() {return price;}
 	
+	//CONSTRUCTEUR / setter
 	public String setCode(String newCode) {code = newCode; return code;}
 	public String setName(String newName) {name = newName; return name;}
 	public float setPrice(float newPrice) {price = newPrice; return price;}
