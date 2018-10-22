@@ -1,7 +1,11 @@
 package pizzas.tp_poo;
 
 public class Pizza {
-	String code;
-	String nom;
-	float prix;
+	private String code;
+	private String name;
+	private float price;
+	
+	public String getCode() {return code;}
+	public String getName() {return name;}
+	public float getPrice() {return price;}
 }
