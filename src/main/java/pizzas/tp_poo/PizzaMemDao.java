@@ -40,7 +40,7 @@ public PizzaMemDao() {
 		Pizza pizzaToModify = listPizza.get(getPosition(codePizza));
 		if(codePizza.length() < 4 && (codePizza.length() > 0)) {
 			if (pizza.getName() != null && pizza.getName().length() < 15 && pizza.getName().length() > 4) {
-					if (codePizza == pizzaToModify.getCode()) {
+				if (codePizza == pizzaToModify.getCode()) {
 						pizzaToModify = pizza;
 						}
 				} else {
