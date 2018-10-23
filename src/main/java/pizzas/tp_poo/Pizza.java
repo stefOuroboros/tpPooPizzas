@@ -8,10 +8,10 @@ public class Pizza {
 	
 	//CONSTRUCTEUR 
 	public Pizza(String code, String name, float price, Categorie categorie) {
-		this.code = code;
-		this.name = name;
-		this.price = price;
-		this.categorie = categorie;
+				this.code = code;
+				this.name = name;
+				this.price = price;
+				this.categorie = categorie;
 	}
 	
 	//getter
