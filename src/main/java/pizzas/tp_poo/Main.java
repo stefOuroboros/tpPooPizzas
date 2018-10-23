@@ -12,7 +12,7 @@ public class Main
         System.out.println( pizzeria);
         
         try {
-        	pizzeria.saveNewPizza("BOL", new Pizza("BOL", "bolognaise", 9.50f));
+        	pizzeria.saveNewPizza("BOL", new Pizza("BOL", "bolognaise", 9.50f, Categorie.VIANDE));
             System.out.println(pizzeria);
         } catch (Exception e) {
         	System.out.println(e.getMessage());

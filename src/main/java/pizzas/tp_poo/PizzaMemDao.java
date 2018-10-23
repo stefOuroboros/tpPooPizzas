@@ -8,9 +8,9 @@ public class PizzaMemDao implements IPizzaDao {
 	
 public PizzaMemDao() {
 		listPizza = new ArrayList<Pizza>();
-		listPizza.add(new Pizza("MAR", "margarita", 7.0f));
-		listPizza.add(new Pizza("FOR", "forestiere", 8.0f));
-		listPizza.add(new Pizza("CAN", "Cannibale", 9.5f));
+		listPizza.add(new Pizza("MAR", "margarita", 7.0f, Categorie.FROMAGE));
+		listPizza.add(new Pizza("FOR", "forestiere", 8.0f, Categorie.CRUDITE));
+		listPizza.add(new Pizza("CAN", "Cannibale", 9.5f, Categorie.VIANDE));
 	}
 
 	public List<Pizza> findAllPizzas() {
